@@ -8,7 +8,8 @@ var celeb ={
 'larry ellison' : "file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/image10.jpg",
 'steve jobs': "file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/image5.jpg",
 'linus torvalds':'file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/image4.jpg',
-'jack dorsey' : 'file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/image9.webp'
+'jack dorsey' : 'file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/image9.webp',
+'game over' : "file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/game-over.jpg"
 }
 
 var hang={
@@ -22,7 +23,9 @@ var hang={
     'hang7' : "file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/hang7.png" ,
 }
 
+document.onkeyup = function(event) {
 
+    // initial state
 var y = Object.entries(hang)[0];
 var hagy = y[1];
 document.getElementById("imgscore").setAttribute("src", hagy);
@@ -44,4 +47,15 @@ for(c = 0; c < l;c++){
         cword.textContent =  cword.textContent + " "; 
     }
 }
+//  when playing
+document.onkeyup = function(event) {
+    letag.textContent = letag.textContent + event.key + ',';
+    // for(f = 0; f < l;f++){
+    //     if(obje2.charAt(f) == event.key){
+    //         cword.textContent =  cword.textContent + event.key;
+    //     }
+}
 
+
+
+}
