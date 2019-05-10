@@ -37,23 +37,41 @@ document.getElementById("imgpers").setAttribute("src", obje1);
 
 var obje2 = i[0];
 var l = obje2.length;
+var arraychar= [""];
+var arraydash=[""];
 console.log(l);
 var cword = document.getElementById("curword");
 cword.textContent= "";
+
+
 for(c = 0; c < l;c++){
-    if(obje2.charAt(c) !== " "){
-        cword.textContent =  cword.textContent + "-";
+    arraychar[c] = obje2.charAt(c);
+    
+    if(arraychar[c] !== " "){
+        arraydash[c] = "-"
+        // cword.textContent =  cword.textContent + "-";
     }else{
-        cword.textContent =  cword.textContent + " "; 
+        arraydash[c]= " "
+        // cword.textContent =  cword.textContent + " "; 
     }
+    cword.textContent = cword.textContent + arraydash[c];
+    
 }
+
 //  when playing
 document.onkeyup = function(event) {
+    
     letag.textContent = letag.textContent + event.key + ',';
-    // for(f = 0; f < l;f++){
-    //     if(obje2.charAt(f) == event.key){
-    //         cword.textContent =  cword.textContent + event.key;
-    //     }
+ console.log(event.key);
+    for(f = 0; f < l;f++){
+        if(arraychar[f] == event.key){
+            arraydash[f]= event.key;
+            cword.textContent = arraydash.join('');
+
+        }
+        
+    }
+    
 }
 
 
