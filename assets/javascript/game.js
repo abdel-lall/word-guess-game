@@ -39,7 +39,7 @@ var obje2 = i[0];
 var l = obje2.length;
 var arraychar= [""];
 var arraydash=[""];
-console.log(l);
+
 var cword = document.getElementById("curword");
 cword.textContent= "";
 
@@ -49,28 +49,41 @@ for(c = 0; c < l;c++){
     
     if(arraychar[c] !== " "){
         arraydash[c] = "-"
-        // cword.textContent =  cword.textContent + "-";
+        
     }else{
         arraydash[c]= " "
-        // cword.textContent =  cword.textContent + " "; 
+         
     }
     cword.textContent = cword.textContent + arraydash[c];
     
 }
-
+var hangcount= 1;
 //  when playing
 document.onkeyup = function(event) {
     
     letag.textContent = letag.textContent + event.key + ',';
- console.log(event.key);
+    var keyp= event.key;
+    boolean1 = true;
     for(f = 0; f < l;f++){
-        if(arraychar[f] == event.key){
+        if(arraychar[f] == keyp){
             arraydash[f]= event.key;
             cword.textContent = arraydash.join('');
-
-        }
-        
+            boolean1= false;
+        }  
     }
+    if(boolean1){
+         var arrayhang = Object.entries(hang)[hangcount];
+        console.log(arrayhang);
+        document.getElementById("imgscore").setAttribute("src", arrayhang[1]);
+        hangcount++;
+        if (hangcount == 8)
+        {
+            var p= Object.entries(celeb)[10];
+            var arraygo = p[1];
+            document.getElementById("imgpers").setAttribute("src", arraygo);
+        }
+    }
+    
     
 }
 
