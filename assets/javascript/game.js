@@ -1,26 +1,26 @@
 var celeb ={
-'elon musk': "file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/image1.jpg",
-'bill gate' : "file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/image2.jpg",
-'jeff bezos' : "file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/image3.jpg",
-'larry page' : "file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/image7.jpeg",
-'sergey brin' : "file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/image8.jpg",
-'mark zuckerberg' : 'file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/image6.jpg',
-'larry ellison' : "file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/image10.jpg",
-'steve jobs': "file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/image5.jpg",
-'linus torvalds':'file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/image4.jpg',
-'jack dorsey' : 'file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/image9.webp',
-'game over' : "file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/game-over.jpg"
+'elon musk': "assets/images/image1.jpg",
+'bill gate' : "assets/images/image2.jpg",
+'jeff bezos' : "assets/images/image3.jpg",
+'larry page' : "assets/images/image7.jpeg",
+'sergey brin' : "assets/images/image8.jpg",
+'mark zuckerberg' : 'assets/images/image6.jpg',
+'larry ellison' : "assets/images/image10.jpg",
+'steve jobs': "assets/images/image5.jpg",
+'linus torvalds':'assets/images/image4.jpg',
+'jack dorsey' : 'assets/images/image9.webp',
+'game over' : "assets/images/game-over.jpg"
 }
 
 var hang={
-    'hang0' : "file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/hang0.png",
-    'hang1' : "file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/hang1.png",
-    'hang2' :  "file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/hang2.png",
-    'hang3' : "file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/hang3.png" ,
-    'hang4' : "file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/hang4.png" ,
-    'hang5' : "file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/hang5.png" ,
-    'hang6' : "file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/hang6.png" ,
-    'hang7' : "file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/hang7.png" ,
+    'hang0' : "assets/images/hang0.png",
+    'hang1' : "assets/images/hang1.png",
+    'hang2' :  "assets/images/hang2.png",
+    'hang3' : "assets/images/hang3.png" ,
+    'hang4' : "assets/images/hang4.png" ,
+    'hang5' : "assets/images/hang5.png" ,
+    'hang6' : "assets/images/hang6.png" ,
+    'hang7' : "assets/images/hang7.png" ,
 }
 
 
