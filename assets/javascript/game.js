@@ -23,13 +23,29 @@ var hang={
     'hang7' : "file:///C:/Users/abdelmounaim/coding/homework-w3/word-guess-game/assets/images/hang7.png" ,
 }
 
-document.onkeyup = function(event) {
 
+var boolean2 = true;
+var boolean3 = true;
+var boolean4 = false;
+var scre = document.getElementById('score');
+var score = 0;
+
+; 
+
+document.onkeypress = function(event) {
+    if (boolean3){ 
+        mainfunction(event) ;
+        
+    }
+    boolean3=false; 
+};
     // initial state
+function mainfunction() { 
+
 var y = Object.entries(hang)[0];
 var hagy = y[1];
 document.getElementById("imgscore").setAttribute("src", hagy);
-
+var score=0;
 var x = Math.floor(Math.random() * 10);
 var i= Object.entries(celeb)[x];
 var obje1 = i[1];
@@ -59,8 +75,24 @@ for(c = 0; c < l;c++){
 }
 var hangcount= 1;
 //  when playing
-document.onkeyup = function(event) {
+
+boolean2= true;
+
+document.onkeyup = function(event){ 
+    if(boolean2){
+    myfunction(event);}
+
+
+}; 
+
+
+
+
+
+function myfunction() {
     
+
+    if(boolean2) {
     letag.textContent = letag.textContent + event.key + ',';
     var keyp= event.key;
     boolean1 = true;
@@ -73,7 +105,6 @@ document.onkeyup = function(event) {
     }
     if(boolean1){
          var arrayhang = Object.entries(hang)[hangcount];
-        console.log(arrayhang);
         document.getElementById("imgscore").setAttribute("src", arrayhang[1]);
         hangcount++;
         if (hangcount == 8)
@@ -81,12 +112,29 @@ document.onkeyup = function(event) {
             var p= Object.entries(celeb)[10];
             var arraygo = p[1];
             document.getElementById("imgpers").setAttribute("src", arraygo);
+            boolean2= false;
+            boolean3=true;
+            letag.textContent = '';
+            scre.textContent = '0';
         }
     }
-    
-    
+    if (arraychar.toString()==arraydash.toString()){
+        boolean4= true;
+        boolean2= false;
+        boolean3=true;
+        
+        if(boolean4){ 
+            score = parseInt(scre.textContent);
+            score = score + 1;
+            scre.textContent= +score;
+            letag.textContent = '';
+            
+        }}
+
+}
+  console.log(boolean2);  
+  return;
 }
 
-
-
 }
+
