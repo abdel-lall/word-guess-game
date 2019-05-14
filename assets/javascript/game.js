@@ -29,7 +29,7 @@ var boolean3 = true;
 var boolean4 = false;
 var scre = document.getElementById('score');
 var score = 0;
-
+var firstpress = true;
 ; 
 
 document.onkeypress = function(event) {
@@ -77,10 +77,12 @@ var hangcount= 1;
 //  when playing
 
 boolean2= true;
+firstpress=false;
 
 document.onkeyup = function(event){ 
     if(boolean2){
-    myfunction(event);}
+    myfunction(event);
+    }
 
 
 }; 
@@ -92,7 +94,7 @@ document.onkeyup = function(event){
 function myfunction() {
     
 
-    if(boolean2) {
+    if(boolean2 && firstpress) {
     letag.textContent = letag.textContent + event.key + ',';
     var keyp= event.key;
     boolean1 = true;
@@ -131,7 +133,7 @@ function myfunction() {
             
         }}
 
-}
+}else{firstpress= true}
   console.log(boolean2);  
   return;
 }
